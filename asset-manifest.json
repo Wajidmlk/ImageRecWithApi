@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ImageRecWithApi/static/css/main.cdb94a20.chunk.css",
+    "main.js": "/ImageRecWithApi/static/js/main.4b826582.chunk.js",
+    "main.js.map": "/ImageRecWithApi/static/js/main.4b826582.chunk.js.map",
+    "runtime-main.js": "/ImageRecWithApi/static/js/runtime-main.c17092dd.js",
+    "runtime-main.js.map": "/ImageRecWithApi/static/js/runtime-main.c17092dd.js.map",
+    "static/css/2.31461e4f.chunk.css": "/ImageRecWithApi/static/css/2.31461e4f.chunk.css",
+    "static/js/2.d343b385.chunk.js": "/ImageRecWithApi/static/js/2.d343b385.chunk.js",
+    "static/js/2.d343b385.chunk.js.map": "/ImageRecWithApi/static/js/2.d343b385.chunk.js.map",
+    "static/js/3.256c13c2.chunk.js": "/ImageRecWithApi/static/js/3.256c13c2.chunk.js",
+    "static/js/3.256c13c2.chunk.js.map": "/ImageRecWithApi/static/js/3.256c13c2.chunk.js.map",
+    "index.html": "/ImageRecWithApi/index.html",
+    "static/css/2.31461e4f.chunk.css.map": "/ImageRecWithApi/static/css/2.31461e4f.chunk.css.map",
+    "static/css/main.cdb94a20.chunk.css.map": "/ImageRecWithApi/static/css/main.cdb94a20.chunk.css.map",
+    "static/js/2.d343b385.chunk.js.LICENSE.txt": "/ImageRecWithApi/static/js/2.d343b385.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c17092dd.js",
+    "static/css/2.31461e4f.chunk.css",
+    "static/js/2.d343b385.chunk.js",
+    "static/css/main.cdb94a20.chunk.css",
+    "static/js/main.4b826582.chunk.js"
+  ]
+}
