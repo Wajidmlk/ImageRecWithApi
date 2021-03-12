@@ -3,7 +3,6 @@ import Particles from 'react-particles-js';
 import Clarifai from 'clarifai';
 import Navigation from './components/Navigation/Navigation';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
-import Logo from './components/Logo/Logo';
 import Rank from './components/Rank/Rank';
 import Signin from './components/Signin/Signin';
 import Register from './components/Register/Register';
@@ -119,8 +118,6 @@ class App extends Component {
         { 
           (route === 'home')?
             <div>
-              <Logo />
-              
               <Rank name={this.state.user.name} entries={this.state.user.entries}/>    
               <ImageLinkForm 
                 onInputChange={this.onInputChange} 
