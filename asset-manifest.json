@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/ImageRecWithApi/static/css/main.cdb94a20.chunk.css",
-    "main.js": "/ImageRecWithApi/static/js/main.148dfa8b.chunk.js",
-    "main.js.map": "/ImageRecWithApi/static/js/main.148dfa8b.chunk.js.map",
-    "runtime-main.js": "/ImageRecWithApi/static/js/runtime-main.c17092dd.js",
-    "runtime-main.js.map": "/ImageRecWithApi/static/js/runtime-main.c17092dd.js.map",
+    "main.css": "/ImageRecWithApi/static/css/main.846ec3a9.chunk.css",
+    "main.js": "/ImageRecWithApi/static/js/main.a33269ee.chunk.js",
+    "main.js.map": "/ImageRecWithApi/static/js/main.a33269ee.chunk.js.map",
+    "runtime-main.js": "/ImageRecWithApi/static/js/runtime-main.ea19b0cd.js",
+    "runtime-main.js.map": "/ImageRecWithApi/static/js/runtime-main.ea19b0cd.js.map",
     "static/css/2.31461e4f.chunk.css": "/ImageRecWithApi/static/css/2.31461e4f.chunk.css",
-    "static/js/2.847cac57.chunk.js": "/ImageRecWithApi/static/js/2.847cac57.chunk.js",
-    "static/js/2.847cac57.chunk.js.map": "/ImageRecWithApi/static/js/2.847cac57.chunk.js.map",
-    "static/js/3.256c13c2.chunk.js": "/ImageRecWithApi/static/js/3.256c13c2.chunk.js",
-    "static/js/3.256c13c2.chunk.js.map": "/ImageRecWithApi/static/js/3.256c13c2.chunk.js.map",
+    "static/js/2.5972095c.chunk.js": "/ImageRecWithApi/static/js/2.5972095c.chunk.js",
+    "static/js/2.5972095c.chunk.js.map": "/ImageRecWithApi/static/js/2.5972095c.chunk.js.map",
+    "static/js/3.97b7e4b5.chunk.js": "/ImageRecWithApi/static/js/3.97b7e4b5.chunk.js",
+    "static/js/3.97b7e4b5.chunk.js.map": "/ImageRecWithApi/static/js/3.97b7e4b5.chunk.js.map",
     "index.html": "/ImageRecWithApi/index.html",
     "static/css/2.31461e4f.chunk.css.map": "/ImageRecWithApi/static/css/2.31461e4f.chunk.css.map",
-    "static/css/main.cdb94a20.chunk.css.map": "/ImageRecWithApi/static/css/main.cdb94a20.chunk.css.map",
-    "static/js/2.847cac57.chunk.js.LICENSE.txt": "/ImageRecWithApi/static/js/2.847cac57.chunk.js.LICENSE.txt"
+    "static/css/main.846ec3a9.chunk.css.map": "/ImageRecWithApi/static/css/main.846ec3a9.chunk.css.map",
+    "static/js/2.5972095c.chunk.js.LICENSE.txt": "/ImageRecWithApi/static/js/2.5972095c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c17092dd.js",
+    "static/js/runtime-main.ea19b0cd.js",
     "static/css/2.31461e4f.chunk.css",
-    "static/js/2.847cac57.chunk.js",
-    "static/css/main.cdb94a20.chunk.css",
-    "static/js/main.148dfa8b.chunk.js"
+    "static/js/2.5972095c.chunk.js",
+    "static/css/main.846ec3a9.chunk.css",
+    "static/js/main.a33269ee.chunk.js"
   ]
 }
