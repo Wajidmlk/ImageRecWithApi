@@ -16,7 +16,7 @@ class Signin extends React.Component{
 		this.setState({signInEmail:event.target.value});
 	}
 	onSubmitSignIn =()=>{
-		fetch('http://localhost:3000/signin',{
+		fetch('https://shrouded-temple-28290.herokuapp.com/signin',{
 			method:'post',
 			headers:{'Content-Type':'application/json'},
 			body:JSON.stringify({
@@ -26,7 +26,7 @@ class Signin extends React.Component{
 		})
 		.then(response =>response.json())
 		.then(user=>{
-			if(user){
+			if(user.id){
 				this.props.loadUser(user);
 				this.props.onRouteChange('home');
 			}

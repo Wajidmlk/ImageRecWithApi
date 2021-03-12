@@ -10,10 +10,6 @@ import Register from './components/Register/Register';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import './App.css';
 
-const app = new Clarifai.App({
-  apiKey: 'a17c3e6de9ac4ea283dbe3588ac73d9b'
-});
-
 const ParticlesOptions = {
   particles: {
     number:{
@@ -23,28 +19,25 @@ const ParticlesOptions = {
        }
     }
   }}
-
+const intitialState={
+  input:'',
+  imageUrl:'',
+  box:{},
+  route:'signin',
+  isSignedIn: false,
+  user:{
+    id:'',
+    name:'',
+    email:'',
+    entries:0,
+    joined:''
+}
+}
 class App extends Component {
-    
- 
   constructor(){
     super();
-    this.state ={
-      input:'',
-      imageUrl:'',
-      box:{},
-      route:'signin',
-      isSignedIn: false,
-      user:{
-        id:'',
-        name:'',
-        email:'',
-        entries:0,
-        joined:''
-      }
-    }
+    this.state =intitialState;
   }
-
   loadUser=(Usr)=>{
     this.setState({user:{
       id:Usr.id,
@@ -54,7 +47,6 @@ class App extends Component {
       joined:Usr.joined
     }});
   }
-
   calculateFaceLocation =(data) =>{
     const clarifaiFace = data.outputs[0].data.regions[0].region_info.bounding_box;
     const image = document.getElementById('inputimage');
@@ -78,14 +70,15 @@ class App extends Component {
   }
   onButtonSubmit = ()=>{
     this.setState({imageUrl:this.state.input});
-
-    
-      app.models.predict(
-      Clarifai.FACE_DETECT_MODEL,
-      this.state.input)
+      fetch('https://shrouded-temple-28290.herokuapp.com/imageurl',{
+              method:'post',
+              headers:{'Content-Type':'application/json'},
+              body:JSON.stringify({input:this.state.input})
+      })
+        .then(response=>response.json())
         .then(response =>{
           if(response){
-            fetch('http://localhost:3000/image',{
+            fetch('https://shrouded-temple-28290.herokuapp.com/image',{
               method:'put',
               headers:{'Content-Type':'application/json'},
               body:JSON.stringify(
@@ -96,6 +89,7 @@ class App extends Component {
             .then(count=>{
               this.setState(Object.assign(this.state.user,{entries:count}))
             })
+            .catch(console.log)
           }
           this.displayFaceBox(this.calculateFaceLocation(response))
         })
@@ -103,7 +97,7 @@ class App extends Component {
   }
   onRouteChange = (route) =>{
     if(route==='signout'){
-      this.setState({isSignedIn:false})
+      this.setState(intitialState)
     }else if(route==='home'){
       this.setState({isSignedIn:true})
     }
